@@ -1,0 +1,269 @@
+@media (max-width: 1500px) {
+  .footer {
+    position: unset;
+  }
+
+  .footer__container {
+    position: relative;
+  }
+
+  .footer__img-left,
+  .footer__img-right {
+    height: 200px;
+  }
+
+  .footer__img-left {
+    bottom: -8rem;
+    left: 7rem;
+  }
+
+  .footer__img-right {
+    bottom: -4.5rem;
+    right: -3.5rem;
+  }
+}
+
+@media (max-width: 992px) {
+  /* @@@@@@@@@@@@@@@@@@@@ home @@@@@@@@@@@@@@@@@@@@@ */
+  .home__img {
+    height: 300px;
+    top: unset;
+    bottom: -1rem;
+  }
+
+  .home__details {
+    top: 0;
+    right: 0;
+    bottom: unset;
+    left: unset;
+  }
+
+  .home__indicator {
+    transform: rotate(90deg);
+    bottom: -3rem;
+    right: 0;
+  }
+
+  .home__description {
+    padding-right: 0;
+    margin-bottom: var(--mb-1);
+  }
+
+  /* @@@@@@@@@@@@@@@@@@@@ category @@@@@@@@@@@@@@@@@@@@@ */
+  .category__container {
+    grid-template-columns: repeat(3, 200px);
+    gap: 3rem;
+  }
+
+  .category__img {
+    width: 130px;
+  }
+
+  /* @@@@@@@@@@@@@@@@@@@@ about @@@@@@@@@@@@@@@@@@@@@ */
+
+  .about__description {
+    width: 90%;
+  }
+
+  .about__img {
+    width: 300px;
+  }
+
+  /* @@@@@@@@@@@@@@@@@@@@ trick or treat @@@@@@@@@@@@@@@@@@@@@ */
+  .trick__container {
+    gap: 2rem;
+  }
+
+  .trick__img {
+    width: 100px;
+    height: 100px;
+  }
+
+  /* @@@@@@@@@@@@@@@@@@ new arrivals @@@@@@@@@@@@@@@@@@ */
+  .new__card {
+    width: 240px;
+  }
+
+  .new__img {
+    width: 120px;
+    height: 120px;
+  }
+}
+
+@media (max-width: 765px) {
+  /* @@@@@@@@@@@@@@@@@@@@ header @@@@@@@@@@@@@@@@@@@@@ */
+  .nav__close,
+  .nav__toggle,
+  .nav__menu-img {
+    display: flex;
+  }
+
+  .nav__toggle {
+    font-size: 1.5rem;
+    color: var(--title-color);
+    cursor: pointer;
+  }
+
+  .nav__menu {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 100%;
+    height: 100%;
+    background: var(--container-color);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s;
+  }
+
+  .nav__list {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .nav__link {
+    font-weight: var(--font-black);
+    text-transform: uppercase;
+    font-size: 1.1rem;
+  }
+
+  .nav__close {
+    position: absolute;
+    top: 1.5rem;
+    right: 1.5rem;
+    font-size: 2rem;
+    color: var(--title-color);
+    cursor: pointer;
+  }
+
+  .nav__menu-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100px;
+  }
+
+  .show-menu {
+    right: 0;
+  }
+
+  /* @@@@@@@@@@@@@@@@@@@@ home @@@@@@@@@@@@@@@@@@@@@ */
+  .home .swiper-wrapper {
+    margin-bottom: 4rem;
+  }
+
+  .home__container {
+    margin-top: 5rem;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .home__img {
+    height: 250px;
+    position: unset;
+    padding-top: 3rem;
+  }
+
+  .home__details {
+    right: 1rem;
+  }
+
+  /* @@@@@@@@@@@@@@@@@@@@ category @@@@@@@@@@@@@@@@@@@@@ */
+  .category__container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+
+  /* @@@@@@@@@@@@@@@@@@@@ about @@@@@@@@@@@@@@@@@@@@@ */
+
+  .about__container {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .about__data {
+    text-align: center;
+  }
+
+  .about__description {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .about__img {
+    width: 220px;
+  }
+
+  /* @@@@@@@@@@@@@@@@@@@@ trick or treat @@@@@@@@@@@@@@@@@@@@@ */
+  .trick__container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* @@@@@@@@@@@@@@@@@@ discount @@@@@@@@@@@@@@@@@@ */
+  .discount__container {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    padding: 2rem;
+    border-radius: 1rem;
+  }
+
+  .discount__img {
+    width: 250px;
+    order: 2;
+  }
+
+  /* @@@@@@@@@@@@@@@@@@ newsletter @@@@@@@@@@@@@@@@@@ */
+
+  .newsletter__description {
+    width: 60%;
+  }
+
+  .newsletter__form {
+    width: 70%;
+  }
+
+  /* @@@@@@@@@@@@@@@@@@ footer @@@@@@@@@@@@@@@@@@ */
+  .footer__container {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .footer__title {
+    margin-bottom: var(--mb-1);
+  }
+
+  .footer__img-left {
+    bottom: -5rem;
+    left: unset;
+    right: 2rem;
+  }
+
+  .footer__img-right {
+    bottom: unset;
+    right: -3rem;
+  }
+}
+
+@media (max-width: 576px) {
+  /* @@@@@@@@@@@@@@@@@@@@ about @@@@@@@@@@@@@@@@@@@@@ */
+  .about__description {
+    width: 100%;
+  }
+
+  /* @@@@@@@@@@@@@@@@@@@@ trick or treat @@@@@@@@@@@@@@@@@@@@@ */
+  .trick__container {
+    gap: 1.5rem;
+  }
+
+  /* @@@@@@@@@@@@@@@@@@ newsletter @@@@@@@@@@@@@@@@@@ */
+  .newsletter__description {
+    width: 100%;
+  }
+
+  .newsletter__form {
+    width: 100%;
+  }
+}
