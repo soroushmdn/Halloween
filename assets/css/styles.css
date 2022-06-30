@@ -482,6 +482,7 @@ main {
   padding: 1.5rem;
   border-radius: 1rem;
   text-align: center;
+  margin: 0 auto;
 }
 
 .new__card:hover .cart__button {
