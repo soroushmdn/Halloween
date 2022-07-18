@@ -80,8 +80,13 @@
   }
 
   /* @@@@@@@@@@@@@@@@@@ new arrivals @@@@@@@@@@@@@@@@@@ */
+
+  .new__swiper {
+    max-width: 720px;
+  }
+
   .new__card {
-    width: 240px;
+    width: 225px;
   }
 
   .new__img {
@@ -90,7 +95,7 @@
   }
 }
 
-@media (max-width: 765px) {
+@media (max-width: 767px) {
   /* @@@@@@@@@@@@@@@@@@@@ header @@@@@@@@@@@@@@@@@@@@@ */
   .nav__close,
   .nav__toggle,
@@ -255,7 +260,7 @@
 
   /* @@@@@@@@@@@@@@@@@@@@ trick or treat @@@@@@@@@@@@@@@@@@@@@ */
   .trick__container {
-    gap: 1.5rem;
+    gap: 1.5rem 1rem;
   }
 
   /* @@@@@@@@@@@@@@@@@@ newsletter @@@@@@@@@@@@@@@@@@ */
@@ -265,5 +270,31 @@
 
   .newsletter__form {
     width: 100%;
+  }
+
+  .newsletter .btn {
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 374px) {
+  .container {
+    width: calc(100% - 2rem);
+  }
+}
+
+/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+  @@@@@@@@@@@@@@@@ 2K & 4K DISPLAYS @@@@@@@@@@@@@@@@
+  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+
+@media (min-width: 2048px) {
+  body {
+    zoom: 1.5;
+  }
+}
+
+@media (min-width: 3840px) {
+  body {
+    zoom: 2;
   }
 }
