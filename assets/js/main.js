@@ -1,3 +1,12 @@
+//  @@@@@@@@@@@@@@@@@@ PRELOADER @@@@@@@@@@@@@@@@@@
+onload = () => {
+  const preloader = document.getElementById('preloader');
+
+  setTimeout(() => {
+    preloader.style.display = 'none';
+  }, 3000);
+};
+
 // @@@@@@@@@@@@@@@@@ show & remove navmenu @@@@@@@@@@@@@@@@@
 const navMenu = document.getElementById('nav-menu'),
   navToggle = document.getElementById('nav-toggle'),
