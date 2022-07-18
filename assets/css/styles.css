@@ -69,12 +69,21 @@ body {
   font-size: var(--normal-font-size);
 }
 
+main {
+  overflow: hidden;
+}
+
 h1,
 h2,
 h3,
 h4 {
   color: var(--title-color);
   font-weight: var(--font-semi);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
 }
 
 button,
@@ -89,15 +98,12 @@ button {
   cursor: pointer;
 }
 
-img {
-  max-width: 100%;
-  height: auto;
-}
-
 /* @@@@@@@@@@@@@@@@@@@@ CSS reusable classes @@@@@@@@@@@@@@@@@@@@@ */
 
-main {
-  overflow: hidden;
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+  width: calc(100% - 3rem);
 }
 
 .section {
@@ -108,12 +114,6 @@ main {
   text-align: center;
   font-size: var(--h2-font-size);
   margin-bottom: var(--mb-2);
-}
-
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  width: calc(100% - 3rem);
 }
 
 .btn {
@@ -145,7 +145,6 @@ main {
   left: 0;
   width: 100%;
   z-index: 100;
-  transition: 1s;
 }
 
 .nav {
@@ -379,9 +378,9 @@ main {
 /* @@@@@@@@@@@@@@@@@@ trick or treat @@@@@@@@@@@@@@@@@@ */
 .trick__container {
   display: grid;
-  grid-template-columns: repeat(3, 200px);
+  grid-template-columns: repeat(3, 220px);
   justify-content: center;
-  gap: 3rem;
+  gap: 2.5rem;
 }
 
 .trick__card {
@@ -462,7 +461,7 @@ main {
 /* @@@@@@@@@@@@@@@@@@ new arrivals @@@@@@@@@@@@@@@@@@ */
 
 .new__swiper {
-  max-width: 992px;
+  max-width: 950px;
 }
 
 .new .swiper-wrapper {
@@ -477,11 +476,12 @@ main {
   position: relative;
   overflow: hidden;
 
-  width: 300px;
+  width: 290px;
   background: var(--container-color);
   padding: 1.5rem;
   border-radius: 1rem;
   text-align: center;
+
   margin: 0 auto;
 }
 
@@ -551,7 +551,7 @@ main {
 
 .newsletter__form {
   background: var(--container-color);
-  padding: 1rem;
+  padding: 0.8rem;
   border-radius: 0.5rem;
   display: flex;
   width: 50%;
@@ -652,7 +652,7 @@ main {
 }
 
 .footer__copy {
-  font-size: var(--tiny-font-size);
+  font-size: 0.6rem;
   text-align: center;
   margin-top: 5rem;
 }
@@ -726,4 +726,42 @@ main {
 ::-webkit-scrollbar-thumb {
   background: #272525;
   border-radius: 0.5rem;
+}
+
+/*@@@@@@@@@@@@@@@@@ preloader @@@@@@@@@@@@@@@@@*/
+
+.preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+
+  background: linear-gradient(
+    90deg,
+    hsla(104, 28%, 40%, 0.5),
+    hsla(58, 28%, 40%, 0.5)
+  );
+  backdrop-filter: blur(20px);
+}
+
+.preloader__img {
+  width: 120px;
+  animation: preloader 3s infinite;
+}
+
+@keyframes preloader {
+  0% {
+    transform: translateY(-1rem);
+  }
+  50% {
+    transform: translateY(1rem);
+  }
+  100% {
+    transform: translateY(-1rem);
+  }
 }
