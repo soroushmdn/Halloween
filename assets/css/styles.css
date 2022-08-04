@@ -513,6 +513,10 @@ button {
   transition: 0.3s;
 }
 
+.new__title {
+  font-size: 1rem;
+}
+
 .new__subtitle {
   font-size: var(--small-font-size);
   margin-bottom: var(--mb-1);
@@ -544,7 +548,7 @@ button {
 .newsletter__description {
   margin-bottom: var(--mb-2);
   font-weight: var(--font-semi);
-  width: 40%;
+  width: 45%;
   margin-left: auto;
   margin-right: auto;
 }
