@@ -263,6 +263,13 @@
     gap: 1.5rem 1rem;
   }
 
+  /* @@@@@@@@@@@@@@@@@@ new arrivals @@@@@@@@@@@@@@@@@@ */
+
+  .new__tag {
+    top: 1rem;
+    left: 1rem;
+  }
+
   /* @@@@@@@@@@@@@@@@@@ newsletter @@@@@@@@@@@@@@@@@@ */
   .newsletter__description {
     width: 100%;
