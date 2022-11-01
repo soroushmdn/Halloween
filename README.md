@@ -5,4 +5,4 @@
 - Developed first for Desktop then for Mobile devices.
 - Compatible with all mobile devices and with a beautiful and pleasant user interface.
 - Contains glassmorphism interface.
-- Contains slider in hero section
+- Contains slider in hero section.
